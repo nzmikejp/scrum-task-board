@@ -195,6 +195,18 @@ h1 span {
   font-size: 0.8em;
 }
 
+.section-task .task-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .section-task .task-size {
   font-family: "gothambold", sans-serif;
   font-size: 1.5em;
@@ -228,13 +240,14 @@ h1 span {
 }
 
 .section-task .task-btns i {
-  width: 3em;
-  height: 3em;
+  width: 2.7em;
+  height: 2.7em;
   border-radius: 50%;
   background-color: #49515f;
   color: #fff;
   text-align: center;
-  line-height: 3;
+  line-height: 2.7;
+  margin-left: 0.5em;
 }
 
 .task-bg-green {

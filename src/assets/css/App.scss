@@ -184,6 +184,12 @@ h1 span {
         font-size: 0.8em;
     }
 
+    .task-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .task-size {
         font-family: $primary-font-bold;
         font-size: 1.5em;
@@ -211,13 +217,14 @@ h1 span {
         display: flex;
 
         i {
-            width: 3em;
-            height: 3em;
+            width: 2.7em;
+            height: 2.7em;
             border-radius: 50%;
             background-color: $mid-color;
             color: $light-color;
             text-align: center;
-            line-height: 3;
+            line-height: 2.7;
+            margin-left: 0.5em;
         }
     }
 }

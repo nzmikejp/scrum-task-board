@@ -50,12 +50,14 @@ class App extends Component {
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, similique.
                       </p>
                     </div>
-                    <div className="task-size">
-                      <p><span>task size</span>5</p>
-                    </div>
-                    <div className="task-btns">
-                      <i className="fas fa-edit edit"></i>
-                      <i className="fas fa-trash-alt trash"></i>
+                    <div className="task-wrap">
+                      <div className="task-size">
+                        <p><span>task size</span>5</p>
+                      </div>
+                      <div className="task-btns">
+                        <i className="fas fa-edit edit"></i>
+                        <i className="fas fa-trash-alt trash"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
