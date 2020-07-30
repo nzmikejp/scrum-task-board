@@ -155,4 +155,89 @@ h1 span {
   border-radius: 0.2em;
   background-color: #61dafb;
 }
+
+.section-task {
+  background-color: #77cbff;
+  border-radius: 0.3em;
+  padding: 1em;
+  color: #282c34;
+  border: 0.2em rgba(0, 0, 0, 0.5) solid;
+}
+
+.section-task .task-headline {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0));
+  border-radius: 0.2em;
+  padding: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.section-task h3 {
+  font-size: 1.3em;
+  color: inherit;
+  display: block;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.section-task h4 {
+  font-size: 1.1em;
+  color: inherit;
+}
+
+.section-task p {
+  font-size: 0.8em;
+}
+
+.section-task .task-size {
+  font-family: "gothambold", sans-serif;
+  font-size: 1.5em;
+}
+
+.section-task .task-size span {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "gothambook", sans-serif;
+  margin-right: 0.5em;
+  font-size: 0.8em;
+  display: inline-block;
+  line-height: 1;
+}
+
+.section-task .task-size p {
+  margin: 0;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-task .task-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-task .task-btns i {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #49515f;
+  color: #fff;
+  text-align: center;
+  line-height: 3;
+}
+
+.task-bg-green {
+  background-color: #69da69;
+}
 /*# sourceMappingURL=App.css.map */

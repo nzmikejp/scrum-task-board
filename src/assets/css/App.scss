@@ -25,14 +25,20 @@ $accent-color: #61dafb;
 $light-color: #fff;
 $mid-color: lighten(#282c34, 15%);
 
+$bg-green: #69da69;
+$bg-blue: #77cbff;
+
+$primary-font: "gothambook", sans-serif;
+$primary-font-bold: "gothambold", sans-serif;
+
 body {
-    font-family: "gothambook", sans-serif;
+    font-family: $primary-font;
     background-color: $bg-color;
     color: $light-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "gothambold", sans-serif;
+    font-family: $primary-font-bold;
     letter-spacing: -0.04em;
     color: $light-color;
 }
@@ -44,7 +50,7 @@ h1 {
 
 h1 span {
     color: $accent-color;
-    font-family: "gothambook", sans-serif;
+    font-family: $primary-font;
 }
 
 .wrap {
@@ -143,4 +149,79 @@ h1 span {
             background-color: $accent-color;
         }
     }
+}
+
+.section-task {
+    background-color: $bg-blue;
+    border-radius: 0.3em;
+    padding: 1em;
+    color: $bg-color;
+    border: 0.2em rgba(0,0,0,0.5) solid;
+
+    .task-headline {
+        background-image: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+        border-radius: 0.2em;
+        padding: 0.3em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        color: inherit;
+        display: block;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    h4 {
+        font-size: 1.1em;
+        color: inherit;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .task-size {
+        font-family: $primary-font-bold;
+        font-size: 1.5em;
+
+        span {
+            text-transform: uppercase;
+            color: $light-color;
+            font-family: $primary-font;
+            margin-right: 0.5em;
+            font-size: 0.8em;
+            display: inline-block;
+            line-height: 1;
+
+        }
+
+        p {
+            margin: 0;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .task-btns {
+        display: flex;
+
+        i {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: $mid-color;
+            color: $light-color;
+            text-align: center;
+            line-height: 3;
+        }
+    }
+}
+
+.task-bg-green {
+    background-color: $bg-green;
 }

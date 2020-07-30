@@ -34,6 +34,31 @@ class App extends Component {
                 <div className="section-title">
                   <h2>to do</h2>
                 </div>
+                <div className="section-tasks">
+                  <div className="section-task">
+                    <div className="task-headline">
+                      <h3>This is a user story</h3>
+                    </div>
+                    <div className="task-story">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quae modi provident quaerat ut, possimus obcaecati officiis repudiandae recusandae temporibus.
+                      </p>
+                    </div>
+                    <div className="task-complete">
+                      <h4>I know I am done when...</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, similique.
+                      </p>
+                    </div>
+                    <div className="task-size">
+                      <p><span>task size</span>5</p>
+                    </div>
+                    <div className="task-btns">
+                      <i className="fas fa-edit edit"></i>
+                      <i className="fas fa-trash-alt trash"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="section col-md-6 col-lg-3 in-progress">
                 <div className="section-title">
