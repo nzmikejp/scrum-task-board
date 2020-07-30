@@ -1,0 +1,146 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+//--- custom fonts
+@font-face {
+    font-family: 'gothambold';
+    src: url(../fonts/gotham/gothambold-webfont.woff2) format('woff2'),
+         url(../fonts/gotham/gothambold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url(../fonts/gotham/gotham-book-webfont.woff2) format('woff2'),
+         url(../fonts/gotham/gotham-book-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$bg-color: #282c34;
+$accent-color: #61dafb;
+$light-color: #fff;
+$mid-color: lighten(#282c34, 15%);
+
+body {
+    font-family: "gothambook", sans-serif;
+    background-color: $bg-color;
+    color: $light-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "gothambold", sans-serif;
+    letter-spacing: -0.04em;
+    color: $light-color;
+}
+
+h1 {
+    font-size: calc(0.7em + 2vmin);
+    margin: 0.3em 0;
+}
+
+h1 span {
+    color: $accent-color;
+    font-family: "gothambook", sans-serif;
+}
+
+.wrap {
+    padding: 1vmin;
+}
+
+.header {
+    position: relative;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    min-height: 4em;
+    
+    svg {
+        width: calc(3em + 2vmin);
+        animation: logo-spin infinite 15s linear;
+    }
+    
+    @keyframes logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.header-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: $mid-color;
+    border-radius: 0.5em;
+    clip-path: circle(1.4em at calc(100% - 2em) 2em);
+    transition: ease 0.5s all;
+    z-index: 80;
+
+    &:hover {
+        clip-path: circle(75%);
+        background-color: $accent-color;
+
+        .hi-btn {    
+            i {
+                opacity: 0;
+            }
+        }
+    }
+
+    .hi-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 75%);
+
+        i {
+            font-size: 1.5em;
+            transition: ease 0.3s all;
+        }
+    }
+}
+
+.section {
+    min-height: 90vmin;
+    box-shadow: inset 0.5em 0.5em 0.5em rgba(0,0,0,0.3),
+                inset -0.5em -0.5em 0.5em rgba(255,255,255,0.07);
+    border-radius: 0.5em;
+    border: 0.2em transparent solid;
+}
+
+.section-title {
+    text-transform: uppercase;
+    margin: 2em 1.5em;
+    position: relative;
+    
+    h2 {
+        font-size: 1.1em;
+        line-height: 1;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(calc(100% + 0.3em), -20%);
+            width: 0.4em;
+            height: 0.4em;
+            border-radius: 0.2em;
+            background-color: $accent-color;
+        }
+    }
+}
